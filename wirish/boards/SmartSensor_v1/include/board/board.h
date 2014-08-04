@@ -25,13 +25,15 @@
  *****************************************************************************/
 
 /**
- * @file   wirish/boards/maple_mini/include/board/board.h
- * @author Marti Bolivar <mbolivar@leaflabs.com>
- * @brief  Maple Mini board header.
+ * @file   wirish/boards/SmartSensor_v1/include/board/board.h
+ * @author Ethan Durrant
+ * @brief  SmartSensor_v1 board header.
  *
  * See wirish/boards/maple/include/board/board.h for more information
  * on these definitions.
  */
+
+
 
 #ifndef _BOARD_SMARTSENSOR_V1_H_
 #define _BOARD_SMARTSENSOR_V1_H_

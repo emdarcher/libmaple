@@ -25,9 +25,9 @@
  *****************************************************************************/
 
 /**
- * @file   wirish/boards/maple_mini/board.cpp
- * @author Marti Bolivar <mbolivar@leaflabs.com>
- * @brief  Maple Mini board file.
+ * @file   wirish/boards/SmartSensor_v1/board.cpp
+ * @author Ethan Durrant
+ * @brief  SmartSensor_v1 board file.
  */
 
 #include <board/board.h>
@@ -45,9 +45,6 @@ void boardInit(void) {
 //setup to use swd
 afio_cfg_debug_ports(AFIO_DEBUG_SW_ONLY); 
 
-//#ifndef CONFIG_MAPLE_MINI_NO_DISABLE_DEBUG
-//    disableDebugPorts();
-//#endif
 }
 
 extern const stm32_pin_info PIN_MAP[BOARD_NR_GPIO_PINS] = {
