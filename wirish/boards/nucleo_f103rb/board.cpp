@@ -124,15 +124,47 @@ void boardInit(void) {
 //    /* JTAG header */
 //
 //    PMAP_ROW(GPIOA,  13,   NULL,  0, NULL, ADCx), /* D39/PA13 */
-//    PMAP_ROW(GPIOA,  14,   NULL,  0, NULL, ADCx), /* D40/PA14 */
+//  PMAP_ROW(GPIOA,   5,   NULL,  0, ADC1,    5), /* D13/PA5 (LED) */  
+// PMAP_ROW(GPIOA,  14,   NULL,  0, NULL, ADCx), /* D40/PA14 */
 //    PMAP_ROW(GPIOA,  15,   NULL,  0, NULL, ADCx), /* D41/PA15 */
 //    PMAP_ROW(GPIOB,   3,   NULL,  0, NULL, ADCx), /* D42/PB3  */
 //    PMAP_ROW(GPIOB,   4,   NULL,  0, NULL, ADCx), /* D43/PB4  */
 //};
 extern const stm32_pin_info PIN_MAP[BOARD_NR_GPIO_PINS] = {
 
+    //top header (CN5)  + pin 1 of top MORPHO header (CN10)
+    PMAP_ROW(GPIOA,   3, TIMER2,  4, ADC1,    3), /* D0/PA3 */
+    PMAP_ROW(GPIOA,   2, TIMER2,  3, ADC1,    2), /* D1/PA2 */
+    PMAP_ROW(GPIOA,  10, TIMER1,  3, NULL, ADCx), /* D2/PA10 */
+    PMAP_ROW(GPIOB,   3,   NULL,  0, NULL, ADCx), /* D3/PB3  */
+    PMAP_ROW(GPIOB,   5,   NULL,  0, NULL, ADCx), /* D4/PB5 */
+    PMAP_ROW(GPIOB,   4,   NULL,  0, NULL, ADCx), /* D5/PB4  */
+    PMAP_ROW(GPIOB,  10,   NULL,  0, NULL, ADCx), /* D6/PB10 */
+    PMAP_ROW(GPIOA,   8, TIMER1,  1, NULL, ADCx), /* D7/PA8 */
+    PMAP_ROW(GPIOA,   9, TIMER1,  2, NULL, ADCx), /* D8/PA9 */
+    PMAP_ROW(GPIOC,   7,   NULL,  0, NULL, ADCx), /* D9/PC7 */
+    PMAP_ROW(GPIOB,   6, TIMER4,  1, NULL, ADCx), /* D10/PB6 */
+    PMAP_ROW(GPIOA,   7, TIMER3,  2, ADC1,    7), /* D11/PA7 */
+    PMAP_ROW(GPIOA,   6, TIMER3,  1, ADC1,    6), /* D12/PA6 */
+    PMAP_ROW(GPIOA,   5,   NULL,  0, ADC1,    5), /* D13/PA5 (LED) */
+    PMAP_ROW(GPIOB,   9, TIMER4,  4, NULL, ADCx), /* D14/PB9 */
+    PMAP_ROW(GPIOB,   8, TIMER4,  3, NULL, ADCx), /* D15/PB8 */
+    PMAP_ROW(GPIOC,   9,   NULL,  0, NULL, ADCx), /* D16/PC9 */
+    
+    //bottom header + row 2 of bottom MORPHO header (CN7)
+    PMAP_ROW(GPIOC,  11,   NULL,  0, NULL, ADCx), /* D17/PC11 */
+    PMAP_ROW(GPIOD,   2,   NULL,  0, NULL, ADCx), /* D18/PD2 */ 
+    PMAP_ROW(GPIOA,   0, TIMER2,  1, ADC1,    0), /* D19/PA0 */
+    PMAP_ROW(GPIOA,   1, TIMER2,  2, ADC1,    1), /* D20/PA1 */
+    PMAP_ROW(GPIOA,   4,   NULL,  0, ADC1,    4), /* D21/PA4 */
+    PMAP_ROW(GPIOB,   0, TIMER3,  3, ADC1,    8), /* D22/PB0 */
+    PMAP_ROW(GPIOC,   1,   NULL,  0, ADC1,   11), /* D23/PC1 */
+    PMAP_ROW(GPIOC,   0,   NULL,  0, ADC1,   10), /* D24/PC0 */
+    
+    //row 2 of top MORPHO connector (CN10)
+    
 
-
+};
 
 // Array of pins you can use for pwmWrite(). Keep it in Flash because
 // it doesn't change, and so we don't waste RAM.

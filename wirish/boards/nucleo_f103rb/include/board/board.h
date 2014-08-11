@@ -25,9 +25,9 @@
  *****************************************************************************/
 
 /**
- * @file   wirish/boards/maple/include/board/board.h
- * @author Marti Bolivar <mbolivar@leaflabs.com>
- * @brief  Maple board header.
+ * @file   wirish/boards/nucleo_f103rb/include/board/board.h
+ * @author Ethan Durrant <emd519@yahoo.com>
+ * @brief  STM32 NUCLEO-F103RB board header.
  */
 
 #ifndef _BOARD_MAPLE_H_
