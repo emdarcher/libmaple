@@ -168,15 +168,20 @@ extern const stm32_pin_info PIN_MAP[BOARD_NR_GPIO_PINS] = {
 
 // Array of pins you can use for pwmWrite(). Keep it in Flash because
 // it doesn't change, and so we don't waste RAM.
+/*extern const uint8 boardPWMPins[] __FLASH__ = {
+    0, 1, 2, 3, 5, 6, 7, 8, 9, 11, 12, 14, 24, 27, 28
+};*/
 extern const uint8 boardPWMPins[] __FLASH__ = {
     0, 1, 2, 3, 5, 6, 7, 8, 9, 11, 12, 14, 24, 27, 28
 };
 
 // Array of pins you can use for analogRead().
+/*extern const uint8 boardADCPins[] __FLASH__ = {
+    0, 1, 2, 3, 10, 11, 12, 15, 16, 17, 18, 19, 20, 27, 28
+};*/
 extern const uint8 boardADCPins[] __FLASH__ = {
     0, 1, 2, 3, 10, 11, 12, 15, 16, 17, 18, 19, 20, 27, 28
-};
-
+}
 // Array of pins that the board uses for something special. Other than
 // the button and the LED, it's usually best to leave these pins alone
 // unless you know what you're doing.
