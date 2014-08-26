@@ -81,3 +81,8 @@ W: http://sarup.dk/index.html
 N: Andy Scott ("xttocs")
 E: andy.g.scott@gmail.com
 D: LiquidCrystal library
+
+N: Ethan Durrant ("emdarcher")
+E: emd519@yahoo.com
+D: ST NUCLEO-F103RB and SmartSensor_v1 support
+W: http://emdinventor-blog.tk/
